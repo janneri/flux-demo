@@ -6,10 +6,10 @@ import TodoPage from './todo/TodoPage';
 let todolist =
     {
         "id": 1,
-        "name": "My Shopping List",
+        "name": "insert list name here",
         "todos": [
             {
-                "text": "foo",
+                "text": "list item",
                 "completed": false,
                 "id": 1
             }
