@@ -18,9 +18,9 @@ let baseUrl = 'http://localhost:3001';
  * It might be ok to just implement the middleware logic and call it from this utility class.
  *
  */
-export default class Http {
+let Http = {
 
-    static get(action, url) {
+    get(action, url) {
         action.started();
 
         fetch(`${baseUrl}/${url}`).then(function(response) {
@@ -35,9 +35,9 @@ export default class Http {
             action.failed(error);
             console.log('There has been a problem with your fetch operation: ' + error.message);
         });
-    }
+    },
 
-    static post(action, url, data) {
+    post(action, url, data) {
         action.started(data);
 
         fetch(`${baseUrl}/${url}`, {
@@ -59,9 +59,9 @@ export default class Http {
             action.failed(data);
             console.log('There has been a problem with your fetch operation: ' + error.message);
         });
-    }
+    },
 
-    static put(action, url, data) {
+    put(action, url, data) {
         action.started(data);
 
         fetch(`${baseUrl}/${url}`, {
@@ -83,9 +83,9 @@ export default class Http {
             action.failed(data);
             console.log('There has been a problem with your fetch operation: ' + error.message);
         });
-    }
+    },
 
-    static delete(action, url, data) {
+    delete(action, url, data) {
         action.started(data);
 
         fetch(`${baseUrl}/${url}`, {
@@ -103,4 +103,5 @@ export default class Http {
             console.log('There has been a problem with your fetch operation: ' + error.message);
         });
     }
-}
+
+};
