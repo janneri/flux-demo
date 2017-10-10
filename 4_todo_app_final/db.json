@@ -1,0 +1,32 @@
+{
+  "todolists": [
+    {
+      "id": 1,
+      "name": "My Shopping List"
+    },
+    {
+      "id": 2,
+      "name": "My Christmas Wish List"
+    }
+  ],
+  "todos": [
+    {
+      "todolistId": 1,
+      "text": "foo",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "todolistId": 1,
+      "text": "bar",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "todolistId": 1,
+      "text": "asf",
+      "completed": false,
+      "id": 6
+    }
+  ]
+}
