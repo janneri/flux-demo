@@ -3,19 +3,6 @@ import React, { Component } from 'react';
 import TodoPage from './todo/TodoPage';
 
 
-let todolist =
-    {
-        "id": 1,
-        "name": "insert list name here",
-        "todos": [
-            {
-                "text": "list item",
-                "completed": false,
-                "id": 1
-            }
-        ]
-    };
-
 let callbacks = {
     load(todolistId) {
         console.log("load", todolistId)
@@ -39,11 +26,27 @@ let callbacks = {
 };
 
 
+let todolist =
+    {
+        "id": 1,
+        "name": "insert list name here",
+        "todos": [
+            {
+                "text": "list item",
+                "completed": false,
+                "id": 1
+            }
+        ]
+    };
+
 
 export default function App() {
 
     return (
-        <TodoPage todolist={todolist} callbacks={callbacks} />
+        <TodoPage
+            todolist={todolist}
+            callbacks={callbacks}
+        />
     )
 
 }
