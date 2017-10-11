@@ -28,13 +28,13 @@ let callbacks = {
 
 let todolist =
     {
-        "id": 1,
-        "name": "insert list name here",
-        "todos": [
+        id: 1,
+        name: "insert list name here",
+        todos: [
             {
-                "text": "list item",
-                "completed": false,
-                "id": 1
+                text: "list item",
+                completed: false,
+                id: 1
             }
         ]
     };
